@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Card</title>
+
+    <style>
+        /* ===== RESET ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        /* ===== PAGE ===== */
+        body {
+            background: #f4d04e;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* ===== CARD ===== */
+        .card {
+            background: white;
+            max-width: 380px;
+            border-radius: 18px;
+            padding: 22px;
+            box-shadow: 10px 10px 0 black;
+            transition: 0.35s ease;
+            animation: fadeUp 0.8s ease;
+        }
+
+        /* Hover animation */
+        .card:hover {
+            transform: translate(-5px, -5px);
+            box-shadow: 16px 16px 0 black;
+        }
+
+        /* ===== IMAGE ===== */
+        .card img.main-img {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 18px;
+        }
+
+        /* ===== TAG ===== */
+        .tag {
+            display: inline-block;
+            background: black;
+            color: #f4d04e;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+
+        /* ===== DATE ===== */
+        .date {
+            font-size: 14px;
+            margin-bottom: 14px;
+        }
+
+        /* ===== TITLE ===== */
+        .title {
+            font-size: 22px;
+            font-weight: 800;
+            margin-bottom: 14px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .title:hover {
+            color: #f4d04e;
+        }
+
+        /* ===== DESCRIPTION ===== */
+        .desc {
+            color: #555;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        /* ===== AUTHOR ===== */
+        .author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .author img {
+            width: 40px;
+            border-radius: 50%;
+        }
+
+        .author span {
+            font-weight: bold;
+        }
+
+        /* ===== ENTRY ANIMATION ===== */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ===== MOBILE OPTIMIZATION ===== */
+        @media (max-width:480px) {
+            .card {
+                padding: 18px;
+                border-radius: 14px;
+            }
+
+            .title {
+                font-size: 20px;
+            }
+
+            .desc {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <img class="main-img"
+            src="https://media.licdn.com/dms/image/v2/D5612AQG5OaGuAUAGSQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1710132857260?e=1773878400&v=beta&t=7hb6hst57xFF8E9yqdnBS7Zr2QCJ0Q4Vjnj6BN1Pqd0"
+            alt="Blog Image">
+
+        <div class="tag">Portfolio</div>
+
+        <div class="date">Published 25 Feb 2026</div>
+
+        <div class="title">Building Modern Web Interfaces</div>
+
+        <div class="desc">
+            A showcase of my front-end skills, responsive design techniques,
+            and interactive UI development experience.
+        </div>
+
+        <div class="author">
+            <img src="c:\Users\LENOVO\OneDrive\Pictures\Saved Pictures\1000066209.jpg" alt="Author">
+            <span>Tharun Pasupuleti</span>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
